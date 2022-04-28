@@ -13,7 +13,7 @@ export const Navigation = () => (
 
       <NavItem>
         <Link
-          to="/movies"
+          to="movies"
         >
           Movies
         </Link>

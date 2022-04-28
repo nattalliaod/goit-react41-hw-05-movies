@@ -8,7 +8,7 @@ export const FilmList = ({ film, addPage }) => {
     const { ref, inView } = useInView({
     threshold: 0,
     triggerOnce: true,
-    delay: 200,
+    delay: 100,
     });
     
   useEffect(() => {

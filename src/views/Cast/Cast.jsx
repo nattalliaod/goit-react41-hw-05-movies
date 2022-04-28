@@ -7,7 +7,8 @@ import defaultImg from 'images/no image.jpg';
 import { CastList, CastItem, NameCharacter, ImgCharacter, DefaultText } from "./Cast.styled";
 
 const Cast = () => {
-    const { movieId } = useParams();
+    const { slug } = useParams();
+    const movieId = slug.match(/[a-zA-Z0-9]+$/)[0];
     const [characters, setCharacters] = useState([]);
     const [isLoading, setIsLoading] = useState(false);
 

@@ -11,9 +11,11 @@ const FilmAdditionalInfo = lazy(() =>
 );
 
 export const MovieDetailsPage = () => {
-    const { movieId } = useParams();
+    const { slug } = useParams();
+    const movieId = slug.match(/[a-zA-Z0-9]+$/)[0];
     const navigate = useNavigate();
     const location = useLocation();
+    
     const [film, setFilm] = useState(null);
     const [isLoading, setIsLoading] = useState(false);
 

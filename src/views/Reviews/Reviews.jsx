@@ -5,7 +5,8 @@ import * as reviewsMovie from 'services/api';
 import { Spinner } from "components/Loader/Loader";
 
 const Reviews = () => {
-    const { movieId } = useParams();
+    const { slug } = useParams();
+    const movieId = slug.match(/[a-zA-Z0-9]+$/)[0];
     const [reviews, setReviews] = useState('');
     const [isLoading, setIsLoading] = useState(false);
 
