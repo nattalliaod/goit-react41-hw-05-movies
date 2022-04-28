@@ -2,7 +2,7 @@
   "name": "goit-react41-hw-05-movies",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://nattalliaod.github.io",
+  "homepage": "https://nattalliaod.github.io/goit-react41-hw-05-movies/",
   "dependencies": {
     "@emotion/react": "^11.9.0",
     "@emotion/styled": "^11.8.1",
