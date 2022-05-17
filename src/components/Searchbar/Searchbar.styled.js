@@ -1,6 +1,6 @@
 import styled from "@emotion/styled";
 
-export const Search = styled.header`
+export const Search = styled.div`
 top: 20;
   left: 0;
   margin: auto;
